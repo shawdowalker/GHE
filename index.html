@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="site.css" />
+    <title>GHEDU</title>
+  </head>
+  <body>
+    <div>
+      <div class="col-lg-12" style="background-color: #ffff">
+        <div class="col-lg-6" style="margin-top: 1.7%">
+          <img src="img/logo.png" alt="" class="logo" />
+          <b><p class="tag">Ghana Education Directory</p></b>
+        </div>
+        <div class="col-lg-6">
+          <div class="navlist">
+            <b>
+              <ol id="topNavList">
+                <li id="navLink">
+                  <a href="#" style="color: #00cd2d">Home</a>
+                </li>
+                <li id="navLink"><a href="#">Browse all Schools</a></li>
+                <li id="navLink"><a href="login.html">Login</a></li>
+                <li id="navLink"><a href="register.html">Register</a></li>
+              </ol>
+            </b>
+          </div>
+        </div>
+      </div>
+      <div class="stack" id="firstdiv">
+        <img id="firstimg" src="img/image.png" alt="" />
+        <div id="search" class="col-lg-12" style="position: absolute">
+          <div class="col-lg-4" id="ali">
+            <div class="col-lg-2">
+              <i
+                id="searchicon"
+                class="fa fa-search"
+                style="position: absolute; border-radius: 10px"
+              ></i>
+            </div>
+            <div class="col-lg-10">
+              <input
+                id="searchinput"
+                placeholder="School or Any keyword"
+                type="text"
+                style="position: absolute"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-3" id="ali">
+            <div class="col-lg-2">
+              <i
+                id="caticon"
+                class="fa fa-list-alt"
+                style="position: absolute"
+              ></i>
+            </div>
+            <div class="col-lg-10">
+              <p id="loctext">Category</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3" id="ali">
+            <div class="col-lg-2">
+              <i
+                id="locicon"
+                class="fa fa-map-marker"
+                style="position: absolute"
+              ></i>
+            </div>
+            <div class="col-lg-10">
+              <p id="loctext">Location</p>
+            </div>
+          </div>
+          <div class="col-lg-2" id="ali">
+            <button id="btnsch">Find School</button>
+          </div>
+        </div>
+      </div>
+      <div class="stack">
+        <img src="img/image3.jpg" alt="" class="center" id="img3" />
+        <div class="center">
+          <b>
+            <p style="float: left; padding-left: 33%; font-size: 24px">
+              Category
+            </p></b
+          >
+
+          <p style="float: right; padding-right: 39%; margin-top: 0.6%">
+            Ghana's Premier Educational Directory, over 30,000 schools listed
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12" id="info">
+        <div style="width: 80; margin-left: 19%">
+          <div class="col-lg-3">
+            <img src="img/imag13.png" alt="" style="margin-top: 5%" />
+          </div>
+          <div class="col-lg-9" style="margin-left: -3%">
+            <div
+              class="col-lg-4"
+              style="background-color: #ffff; width: auto; border-radius: 10px"
+            >
+              <img src="img/image9.png" alt="" style="padding-top: 5%" />
+              <b> <p style="font: 17px">Nursery or Kindergarten</p></b>
+              <p>1,345 listed school</p>
+            </div>
+            <div
+              class="col-lg-4"
+              style="
+                background-color: #ffff;
+                width: auto;
+                border-radius: 10px;
+                margin-left: 2%;
+              "
+            >
+              <img src="img/image12.png" alt="" style="padding-top: 5%" />
+              <b> <p style="font: 17px">Primary</p></b>
+              <p>1,345 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-9" style="margin-top: 1%; margin-left: -3%">
+            <div
+              class="col-lg-4"
+              style="background-color: #ffff; width: auto; border-radius: 10px"
+            >
+              <img src="img/image11.png" alt="" style="padding-top: 5%" />
+              <b> <p style="font: 17px">Junior High Schools</p></b>
+              <p>1,345 listed school</p>
+            </div>
+            <div
+              class="col-lg-4"
+              style="
+                background-color: #ffff;
+                width: auto;
+                border-radius: 10px;
+                margin-left: 2%;
+              "
+            >
+              <img src="img/image10.png" alt="" style="padding-top: 5%" />
+              <b> <p style="font: 17px">Senior High Schools</p></b>
+              <p>1,345 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-9" style="margin-top: 1%; margin-left: -3%">
+            <div
+              class="col-lg-4"
+              style="background-color: #ffff; width: auto; border-radius: 10px"
+            >
+              <img src="img/image6.png" alt="" style="padding-top: 5%" />
+              <b> <p style="font: 17px">Health Training</p></b>
+              <p>1,345 listed school</p>
+            </div>
+            <div
+              class="col-lg-4"
+              style="
+                background-color: #ffff;
+                width: auto;
+                border-radius: 10px;
+                margin-left: 2%;
+              "
+            >
+              <img src="img/image9.png" alt="" style="padding-top: 5%" />
+              <b> <p style="font: 17px">University</p></b>
+              <p>1,345 listed school</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-9"
+            style="
+              margin-top: 2%;
+              position: relative;
+              z-index: 0;
+              margin-left: 22%;
+            "
+          >
+            <div
+              style="
+                height: 400px;
+                width: 400px;
+                background-color: #eff41b;
+                position: absolute;
+                z-index: 1;
+                position: absolute;
+              "
+            ></div>
+            <div>
+              <img
+                src="img/image5.png"
+                alt=""
+                style="
+                  position: absolute;
+                  z-index: 2;
+                  margin-top: 4%;
+                  margin-left: 1%;
+                "
+              />
+            </div>
+            <div
+              style="
+                position: absolute;
+                z-index: 3;
+                margin-left: 35%;
+                margin-top: 15%;
+              "
+              class="col-lg-4"
+            >
+              <b
+                ><p style="color: #071a52; font-size: 40px">
+                  <span> Help A Deprived</span><br />
+                  <span style="color: #00cd2d">School</span>.
+                </p></b
+              >
+              <p>
+                Let’s come together and help children at<br />
+                rural areas to have access to quality<br />
+                edcucation.
+              </p>
+              <button
+                style="
+                  background-color: #00cd2d;
+                  color: white;
+                  border: none;
+                  border-radius: 5px;
+                "
+              >
+                Help a School <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-12"
+        style="
+          background-color: #f5faf4;
+          width: 100%;
+          margin-top: 28%;
+          height: 300px;
+        "
+      >
+        <b><p style="padding-top: 20px">Most Viewed Schools</p></b>
+        <div
+          class="carousel"
+          style="padding-top: 20px"
+          data-flickity='{"wrapAround": true, "autoPlay":true}'
+        >
+          <div class="carousel-cell">
+            <img src="img/school1.jpg" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school2.png" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school3.png" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school4.png" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school1.jpg" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school2.png" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school3.png" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school4.png" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school1.jpg" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school2.png" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school3.png" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="img/school4.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 2%; margin-left: 15%">
+        <div style="width: 80%">
+          <b><p style="margin-left: 1%">Schools by Regions</p></b>
+          <div class="col-lg-12">
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: left;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: right;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-12" style="margin-top: 2%">
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: left;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: right;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-12" style="margin-top: 2%">
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: left;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: right;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-12" style="margin-top: 2%">
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: left;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: right;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-12" style="margin-top: 2%">
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: left;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: right;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-12" style="margin-top: 2%">
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: left;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: right;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-12" style="margin-top: 2%">
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: left;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: right;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+          </div>
+          <div class="col-lg-12" style="margin-top: 2%">
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: left;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+            <div
+              class="col-lg-6"
+              style="
+                background-color: #f5faf4;
+                height: 60px;
+                float: right;
+                width: 49%;
+              "
+            >
+              <b><p>Ahafo Region</p></b>
+              <p>8,459 listed school</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+        <div class="container">
+          <div class="column">
+            <p id="link">Other Links</p>
+            <ul>
+              <li id="other">WAEC</li>
+              <li id="other">Ministry of Education</li>
+              <li id="other">Accredition Board</li>
+              <li id="other">CHASS</li>
+            </ul>
+          </div>
+          <div class="column">
+            <p id="link" style="text-align: justify">
+              Ghana Education Directory
+            </p>
+            <p id="GED">
+              No.10 Plange Close Adabraka-Ghana <br />
+              Tel: +233 302 247726 Email:<br />
+              info@ghanaedudirectory.com
+            </p>
+          </div>
+          <div class="column">
+            <p id="link">Connect with Us</p>
+            <ul class="fa-ul" id="con">
+              <li id="other">
+                <i class="fa fa-twitter" style="color: #55acee"></i>Twitter
+              </li>
+              <li id="other">
+                <i class="fa fa-facebook-square" style="color: #395185"></i>
+                Facebook
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p style="text-align: center">
+          © 2022 Developed by Accede Ghana Limited
+        </p>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjlgfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>
